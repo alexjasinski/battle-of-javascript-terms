@@ -76,6 +76,7 @@ class Game {
       "machine-result-element"
     );
     this.resultTieElement = document.getElementById("tie-result-element");
+    this.choiceMessage = document.getElementById("choice-message");
   }
 
   handleGameStart() {
@@ -89,9 +90,9 @@ class Game {
 
   handleGameEnd() {
     if (
-      this.resultTie === 2 ||
-      this.resultPlayer === 2 ||
-      this.resultMachine === 2
+      this.resultTie === 10 ||
+      this.resultPlayer === 10 ||
+      this.resultMachine === 10
     ) {
       this.resultTie = 0;
       this.resultPlayer = 0;
@@ -102,7 +103,7 @@ class Game {
       this.startGame.style.display = "block";
       this.endGame.style.display = "none";
       this.insideGame.style.display = "none";
-      // this.choicesButtons.style.display = "none";
+      this.startButton.innerHTML = "Restart Button";
       this.resultMessage.innerHTML = "This is the end-result.";
       this.resultMessage.style.color = "blue";
       // this.handleGameStart();
@@ -110,12 +111,13 @@ class Game {
   }
 
   handleUserChoice(choice) {
-    console.log(this.userChoice, this.botChoice);
+    // console.log(this.userChoice, this.botChoice);
     this.userChoice = choice;
     this.botChoice =
       this.choices[Math.floor(Math.random() * this.choices.length)];
     this.handleGameResult();
     this.handleGameEnd();
+    this.choiceMessage.innerHTML = `you chose ${choice} and the bot has chosen ${this.botChoice}`;
   }
 
   handleGameResult() {

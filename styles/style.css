@@ -96,3 +96,10 @@ th {
   bottom: 270px;
   left: 23px;
 }
+
+#choice-message {
+  color: black !important;
+  position: absolute;
+  top: 2em;
+  left: 24%;
+}
