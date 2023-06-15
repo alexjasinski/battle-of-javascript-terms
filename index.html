@@ -12,31 +12,33 @@
 
 <body>
   <div id="start-game">
-    <button id="start-game-button">start game</button>
+    <button id="start-game-button">Start Game</button>
   </div>
   <div id="inside-game">
-    <button type="button" id="function-btn">Function</button>
-    <button type="button" id="method-btn">Method</button>
-    <button type="button" id="object-btn">Object</button>
-    <button type="button" id="variable-btn">Variable</button>
-    <button type="button" id="string-btn">String</button>
-    <table id="scoreboard">
-      <tr>
-        <th>You</th>
-        <th>Machine</th>
-        <th>Tie</th>
-      </tr>
-      <tr>
-        <td id="player-result-element">0</td>
-        <td id="machine-result-element">0</td>
-        <td id="tie-result-element">0</td>
-      </tr>
-    </table>
-    <p id="result-message">Tic, Tac, Toe - JavaScript Edition</p>
-    <div id="end-game">
-      end game
+    <div id="button-container">
+      <button class="inside-game-button" type="button" id="function-btn">Function</button>
+      <button class="inside-game-button" type="button" id="method-btn">Method</button>
+      <button class="inside-game-button" type="button" id="object-btn">Object</button>
+      <button class="inside-game-button" type="button" id="variable-btn">Variable</button>
+      <button class="inside-game-button" type="button" id="string-btn">String</button>
     </div>
-    <div id="game-container">
+  </div>
+  <table id="scoreboard">
+    <tr>
+      <th>You</th>
+      <th>Machine</th>
+      <th>Tie</th>
+    </tr>
+    <tr>
+      <td id="player-result-element">0</td>
+      <td id="machine-result-element">0</td>
+      <td id="tie-result-element">0</td>
+    </tr>
+  </table>
+  <p id="result-message">Tic, Tac, Toe - JavaScript Edition</p>
+  <div id="end-game">
+    <button id="restart-game-button">Retart Game</button>
+  </div>
 </body>
 <script type="text/javascript" src="./src/game.js"></script>
 
