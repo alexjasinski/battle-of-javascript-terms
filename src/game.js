@@ -60,6 +60,9 @@ class Game {
     this.startGame = document.getElementById("start-game");
     this.insideGame = document.getElementById("inside-game");
     this.endGame = document.getElementById("end-game");
+    this.startButton = document.getElementById("start-game-button");
+    this.restartButton = document.getElementById("restart-game-button");
+    this.choicesButtons = document.getElementById("button-container");
     this.choices = ["Function", "Method", "Object", "Variable", "String"];
     this.userChoice = "";
     this.botChoice =
@@ -78,16 +81,31 @@ class Game {
   handleGameStart() {
     this.startGame.style.display = "none";
     this.insideGame.style.display = "block";
+    this.endGame.style.display = "none";
+    this.resultTie = 0;
+    this.resultMachine = 0;
+    this.resultPlayer = 0;
   }
 
   handleGameEnd() {
-    this.endGame.style.display = "block";
     if (
-      this.resultTie === 11 ||
-      this.resultPlayer === 11 ||
-      this.resultMachine === 11
+      this.resultTie === 2 ||
+      this.resultPlayer === 2 ||
+      this.resultMachine === 2
     ) {
+      this.resultTie = 0;
+      this.resultPlayer = 0;
+      this.resultMachine = 0;
+      this.resultPlayerElement.innerHTML = 0;
+      this.resultMachineElement.innerHTML = 0;
+      this.resultTieElement.innerHTML = 0;
+      this.startGame.style.display = "block";
+      this.endGame.style.display = "none";
       this.insideGame.style.display = "none";
+      // this.choicesButtons.style.display = "none";
+      this.resultMessage.innerHTML = "This is the end-result.";
+      this.resultMessage.style.color = "blue";
+      // this.handleGameStart();
     }
   }
 
@@ -295,6 +313,11 @@ const game = new Game();
 
 const startButton = document.getElementById("start-game-button");
 startButton.addEventListener("click", () => {
+  game.handleGameStart();
+});
+
+const restartButton = document.getElementById("restart-game-button");
+restartButton.addEventListener("click", () => {
   game.handleGameStart();
 });
 

@@ -1,6 +1,98 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  display: inline-grid;
+  width: 800px;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+#start-game {
+  display: block;
+  background-position: top center;
+  background-size: 100%;
+  border-width: 800px;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-image: url(../images/title.jpg);
+}
+
 #inside-game {
   display: none;
+  background-image: url(../images/title.jpg);
+  background-position: top center;
+  background-size: 100%;
+  border-width: 800px;
+  height: 550px;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
 #end-game {
   display: none;
+  background-image: url(../images/title.jpg);
+  background-position: top center;
+  background-size: 100%;
+  border-width: 800px;
+  height: 550px;
+  background-position: no-repeat;
+  position: relative;
+}
+
+#scoreboard {
+  table-layout: auto;
+  width: 100%;
+  border: 3px solid black;
+  display: inline-table;
+  border-style: solid;
+}
+
+td {
+  border: 2px solid black;
+}
+
+th {
+  border: 2px solid black;
+}
+
+.inside-game-button {
+  display: inline-table;
+  position: relative;
+  size: 100px;
+  top: 77%;
+  width: 80px;
+}
+
+#button-container {
+  display: inline-block;
+  position: relative;
+  top: 412px;
+  left: 23px;
+}
+
+#result-message {
+  display: inline-block;
+  position: relative;
+  bottom: 500px;
+  width: 50%;
+  left: 225px;
+}
+
+#start-game-button {
+  display: inline-block;
+  position: relative;
+  top: 412px;
+  left: 23px;
+}
+
+#restart-game-button {
+  display: inline-block;
+  position: relative;
+  bottom: 270px;
+  left: 23px;
 }
