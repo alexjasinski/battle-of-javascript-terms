@@ -4,11 +4,11 @@ const data = [
     img: "https://media.istockphoto.com/id/1093110112/photo/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-of-green-forest-with-pure.jpg?s=612x612&w=0&k=20&c=lpQ1sQI49bYbTp9WQ_EfVltAqSP1DXg0Ia7APTjjxz4=",
     defeats: {
       variable:
-        "Function executes code and defeats Variable: Functions win against Variables because they can execute code and operate on Variables.",
+        "Function executes code and defeats Variable: Functions win against Variables because they can execute code and perform computations on the data stored in Variables.",
       object:
         "Function executes code and defeats Object: Functions win against Objects because they can execute code and operate on Objects.is defeated by Function.",
       string:
-        "Function executes code and defeats String: Functions win against Strings because they can execute code and perform operations beyond just manipulating textual data.",
+        "Function executes code and defeats String: Functions win against Strings because they can execute code and perform operations beyond just manipulating textual data. For example, a Function could take a String representing a date in one format and convert it to a different format. ",
     },
   },
   {
@@ -16,7 +16,7 @@ const data = [
     img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=75",
     defeats: {
       function:
-        "Method manipulates Objects and defeats Function: Methods win against Functions because they can manipulate Objects and invoke Functions.",
+        "Method manipulates Objects and defeats Function: Methods win against Functions because they can manipulate Objects by invoking specific behaviors and modifying their state.",
       variable:
         "Method manipulates Objects and defeats Variable: Methods win against Variables because they can manipulate Objects and invoke Functions.",
     },
@@ -26,7 +26,7 @@ const data = [
     img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=75",
     defeats: {
       method:
-        "Object contains Variables and defeats Method: Objects win against Methods because they can contain Variables and manipulate their values.",
+        "Object contains Variables and defeats Method: Objects win against Methods because they encapsulate data within Variables and provide methods to manipulate and interact with that data.",
       function:
         "Object contains Variables and defeats Function: Objects win against Functions because they can contain Variables and manipulate their values.",
     },
@@ -36,7 +36,7 @@ const data = [
     img: "https://imgd.aeplcdn.com/1056x594/n/cw/ec/44686/activa-6g-right-front-three-quarter.jpeg?q=75",
     defeats: {
       object:
-        "Variable stores data and defeats Object: Variables win against Objects because they can store different types of data and represent various entities.ariable stores data and defeats Object.",
+        "Variable stores data and defeats Object: Variables win against Objects because they provide a way to store and represent different types of data efficiently.",
       method:
         "Variable stores data and defeats Method: Variables win against Methods because they can store different types of data and represent various entities.",
     },
